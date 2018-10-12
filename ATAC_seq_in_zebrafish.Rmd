@@ -1,0 +1,22 @@
+---
+title: "ATAC-seq in zebrafish"
+author: "T.A.S."
+date: "10/12/2018"
+output: pdf_document
+---
+
+## Notes
+The protocol is modified from the lab of José Luis Gómez-Skarmeta (July 2018). The original protocol was for whole *Danio rerio* embryos of 256 cell to 48 hpf stage animals. 
+
+### Number of cells
+What is the target number of cells?
+
+### Cell Lysis and Transposition Reaction
+
+1. Depending on stage, you might weant to dechorionate embryos with pronase. If so, rinse embryos several times with E3 to remove the pronase. 
+
+1. Transfer the tissues to 1.5 eppendorf tubes and remove the E3. Add 0.5 ml of Ginzburg Fish Ringer w/o Ca buffer (55 mM NaCL, 1.8 mM KCl, 1.24 mM NaHC03). Pipette up and down to disolve the yolk. Leave rotating at 1100 RPM for 5 minutes.
+
+1. Centrifiuge at 4 C for 5 min at 500 g.
+
+1. Remove supernatant and wash (one or more times if neccessary)
