@@ -8,9 +8,6 @@ output: pdf_document
 ## Notes
 The protocol is modified from the lab of José Luis Gómez-Skarmeta (July 2018). The original protocol was for whole *Danio rerio* embryos of 256 cell to 48 hpf stage animals. 
 
-### Number of cells
-What is the target number of cells?
-
 ### Cell Lysis and Transposition Reaction
 
 1. Depending on stage, you might weant to dechorionate embryos with pronase. If so, rinse embryos several times with E3 to remove the pronase. 
@@ -19,4 +16,13 @@ What is the target number of cells?
 
 1. Centrifiuge at 4 C for 5 min at 500 g.
 
-1. Remove supernatant and wash (one or more times if neccessary)
+1. Remove supernatant and wash (one or more times if neccessary) with ice cold 1x PBS.
+
+1. Centrifuge at 4 C for 5 min at 500 g.
+
+1. Resuspend cells in 50 ul of lysis buffer (10 mM Tris-HCL, pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% NP40), and pipet up and down to lyse the cells. (
+
+1. Take 25 ul and centrifuge at 500g for 10 min at 4 C. During this centrifugation, use the remaining 25 ul to count the cells using Hoescht and prepare the Transposition reaction.
+
+*Lysis buffer*: Recipe for 1 ml lysis buffer: 5 ul Tris 2M pH 7.5, 2.5 ul NaCL 4 M, 3 ul MgCl 1M, 10 NP40 10%, 970 H20.)
+*Transposition Reaction Mix*: 
