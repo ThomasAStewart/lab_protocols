@@ -1,20 +1,84 @@
 ---
 title: "ATAC-seq in zebrafish"
-author: "T.A.S."
-date: "10/12/2018"
+author: "T.A.S. - last modified 2018.10.12"
 output: pdf_document
 ---
 
-## Notes
-The protocol is modified from the lab of José Luis Gómez-Skarmeta (July 2018). The original protocol was for whole *Danio rerio* embryos of 256 cell to 48 hpf stage animals. 
+**Notes**
+
++ This protocol is modified from another that was used on whole embryos of zebrafish (Danio rerio). It has been optimized for used on the anal fin anlage in zebrafish (approximately 4 weeks post fertilization). 
+
++ Cell number: You will need to measure the call number and use this information to optimize the PCR step.
 
 ### Cell Lysis and Transposition Reaction
 
-1. Depending on stage, you might weant to dechorionate embryos with pronase. If so, rinse embryos several times with E3 to remove the pronase. 
++ Depending on stage, you might weant to dechorionate embryos. If you use pronase to do this, rinse embryos several times with E3 to remove pronase. 
 
-1. Transfer the tissues to 1.5 eppendorf tubes and remove the E3. Add 0.5 ml of Ginzburg Fish Ringer w/o Ca buffer (55 mM NaCL, 1.8 mM KCl, 1.24 mM NaHC03). Pipette up and down to disolve the yolk. Leave rotating at 1100 RPM for 5 minutes.
 
-1. Centrifiuge at 4 C for 5 min at 500 g.
+## Cell Lysis and Transposition Reaction
+
+1. Place cells in ependorf tube.
+
+1. Resuspend cells in 50 ul of **lysis buffer**. Suggested amount of time - just until you see dissagregation of cells.
+
+1. Take 25 ul and centrigute at 500 g for 10 min at 4 C. While this is happening, use the remaining 25 ul to count the cells with Hoechst (1:1000) and also to prepare the transposition reaction.
+
+    + Alternatively, you can generate a tagmentation buffer (2x) as follows: 20 mM Tris(hydroxymetyl) aminomethane, 10 mM Mg Cl2, 20% (vol/vol) dimeethylformamide, according to ref#. Before the addition of the dimethymformamide, adjust the pH to 7.6 with 100% acetic acid. Sterilize the buffer by titration. Store for -20 for up to 6 months. Also, instead of 20 mM Tris, you can use 20 mR TAPS-NaOH (pH 8.5).
+
+1. Remove the lysis buffer and resuspend the pelleted nuclei in 50 ul of **transposition reaction mix** and gently pipette up and down to resuspend nuclei.
+
+1. Incubate the transposition reaction 30 minutes at 37 C.
+
+1. Immediately following transposition, purify using a Qiagen MinElute Kit following manufacturers instructions.
+
+1. Elute transposed DNA in 10 ul Elution buffer (10 mM Tris buffer, pH 8)
+
+1. Purified DNA can be stored at -20 C.
+
+
+## PCR amplification
+
+1. To amplify transposed DNA fragments, combine the following in a PCR tube: 50 ul total. Complete list of primers is Suppl. Table. 1 Buenrostro et al Nat. Methods. 2013. Stock concentration of primers is 10 uM.
+
+    + 9 ul transposed DNA
+  
+    + 11 ul nuclease free H20
+  
+    + 2.5 ul Nextera PCR primer 1*
+  
+    + 2.5 ul Nextera PCR primer 2* [barcode]
+  
+    + 25 ul NEBNext High Fidelity 2x PCR master mix (new england lab cat # M0541)
+
+1. Cycle as follows:
+
+    1. 72 C for 5 min
+    2. 98 C for 30 sec.
+    3. 98 C for 1 sec
+    4. 63 C for 30 sec
+    5. 72 C for 1 min
+    6. Repeat steps 3-5 13x
+  
+1. Purify amplified library using Qiagen PCR cleanup kit. Elute library in 20 ul of elution buffer (10 mM Tris Buffer, pH 8). Be sure to dry the column before adding elution buffer. 
+
+## Gel electrophoresis.
+
+1. Run 2-5 ul of the amplified library on 2% agarose gel. The different nucleosomes should be observed.
+
+
+## Solution recipes
+
+**Lysis buffer**: 1 ml receipe - 5 ul Tris 2M pH 7.5, 2.5 ul NaCl 4M, 3 ul MgCl 1M, 10 ul NP40 10%, 970 ul H20.
+
+**Ginzberg Fish Ringer w/o Ca Buffer**: 55 mM NaCL, 1.8 mM KCl, 1.24 mM NaHC03
+
+**Transposition reaction mix**: Total of 50 ul.
+
+  + 25 ul 2x TD Buffer (Illumina Cat #FC-121-1030)
+  
+  + 2.5 ul Tn5 Transposase (Illmina Cat #FC-121-1030)
+  
+  + 22.5 ul nuclease free H20
 
 1. Remove supernatant and wash (one or more times if neccessary) with ice cold 1x PBS.
 
